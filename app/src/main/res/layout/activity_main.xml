@@ -4,15 +4,173 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="##CCCCCC"
     tools:context=".MainActivity">
-
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="O Gambito da Rainha"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/description"
+        android:padding="10dp"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Com altos e baixos, produção da Netflix em seu maior apelo na atuação e no magnetismo de Naya Taylor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genero"
+        android:textStyle="italic"
+
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/star1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/genero"
+        app:layout_constraintTop_toTopOf="@id/genero"
+        app:layout_constraintBottom_toBottomOf="@id/genero"
+
+        app:srcCompat="@drawable/estrela" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/star2"
+        android:layout_marginLeft="25dp"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/genero"
+        app:layout_constraintTop_toTopOf="@id/genero"
+        app:layout_constraintBottom_toBottomOf="@id/genero"
+
+        app:srcCompat="@drawable/estrela" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/star3"
+        android:layout_marginLeft="40dp"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/genero"
+        app:layout_constraintTop_toTopOf="@id/genero"
+        app:layout_constraintBottom_toBottomOf="@id/genero"
+
+        app:srcCompat="@drawable/estrela" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/star4"
+        android:layout_marginLeft="55dp"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/genero"
+        app:layout_constraintTop_toTopOf="@id/genero"
+        app:layout_constraintBottom_toBottomOf="@id/genero"
+
+        app:srcCompat="@drawable/estrela" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/star5"
+        android:layout_marginLeft="70dp"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/genero"
+        app:layout_constraintTop_toTopOf="@id/genero"
+        app:layout_constraintBottom_toBottomOf="@id/genero"
+
+        app:srcCompat="@drawable/estrela" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/genero"
+        android:gravity="left"
+        android:layout_margin="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="maiores de 18 anos | 2020"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:padding="25dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:justificationMode="inter_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não basta querer revisitar outras décadas, é preciso saber encaixar as referências. \n E isso a figurinista de Berlim, Gabriele Binder, faz com maestria em O Gambito da Rainha.Com looks inspirados em alguns dos maiores ícones do mundo da moda, como Audrey Hepburn, Jackie Kennedy e Grace Kelly, ela criou um guarda-roupa para Beth Harmon, personagem da atriz revelação Anya Taylor-Joy, capaz de traduzir sentimentos em escalada social e emocional, que expressam exatamente cada momento..."
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poster"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonfi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="25px"
+        android:background="@drawable/button"
+        android:text="Faça login para continuar a leitura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/poster"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:srcCompat="@drawable/capa" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/font"
+        android:padding="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arquivo@Netflix"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/poster"
+        app:layout_constraintTop_toBottomOf="@id/poster" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#EAC306"
+        android:layout_height="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#A5A4A4"
+        android:layout_height="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
