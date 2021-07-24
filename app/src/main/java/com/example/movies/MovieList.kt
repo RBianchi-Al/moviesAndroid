@@ -10,12 +10,10 @@ class MovieList : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_movie_list)
-
         initLayout()
-
         setupList()
     }
+
     private fun initLayout(){
         binding = ActivityMovieListBinding.inflate(layoutInflater)
         val view = binding.root
@@ -24,16 +22,18 @@ class MovieList : AppCompatActivity() {
 
 
     private fun setupList() {
-        val adapter = MoviesAdapter()
+        val adapter = MoviesAdapter {
+            openDetailsActivity()
+        }
         binding.moviesList.adapter = adapter
         val list:List<String> = List(10){
-            "O gambit da Raina $it"
+            "Film $it"
         }
         adapter.addItemList(list)
     }
 
-    private fun openDetailsActivity() {
-        val intent = Intent(this, MovieListDetails::class.java)
-        startActivity(intent)
-    }
+   private fun openDetailsActivity() {
+      val intent = Intent(this, MovieListDetails::class.java)
+       startActivity(intent)
+   }
 }

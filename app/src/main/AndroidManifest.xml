@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Movies">
-        <activity android:name=".MovieListDetails"></activity>
+        <activity android:name=".MovieListDetails"/>
         <activity android:name=".MovieList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

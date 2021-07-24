@@ -48,7 +48,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/genero"
 
-            tools:ignore="RtlSymmetry" />
+            />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/star1"
@@ -135,8 +135,7 @@
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/poster"
-            tools:targetApi="o" />
+            app:layout_constraintTop_toBottomOf="@id/poster" />
 
 
         <androidx.appcompat.widget.AppCompatButton

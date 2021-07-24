@@ -1,5 +1,3 @@
 package activity_details
 
-class ActivityMoviesList {
-
-}
+class ActivityMoviesList
