@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MoviesAdapter">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/detailsId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="O Gambito da Rainha"
+            android:textColor="@color/black"
+            android:layout_marginLeft="160dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="@id/poster"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@id/poster"
+            android:layout_marginBottom="15dp"
+            android:layout_margin="50dp"
+            android:layout_width="120dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@id/detailsId"
+            app:layout_constraintStart_toStartOf="@id/detailsId"
+            app:layout_constraintTop_toBottomOf="@id/detailsId"
+            app:srcCompat="@drawable/capa" />
+    </FrameLayout>
+</layout>
