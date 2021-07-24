@@ -3,7 +3,6 @@ package com.example.movies
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.movies.databinding.ActivityMainBinding
 import com.example.movies.databinding.ActivityMovieListBinding
 
 class MovieList : AppCompatActivity() {
@@ -26,9 +25,9 @@ class MovieList : AppCompatActivity() {
 
     private fun setupList() {
         val adapter = MoviesAdapter()
-        binding.moviesList.setAdapter(adapter)
+        binding.moviesList.adapter = adapter
         val list:List<String> = List(10){
-            "O gambito da Rainha ${it}"
+            "O gambit da Raina $it"
         }
         adapter.addItemList(list)
     }

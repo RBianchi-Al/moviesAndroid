@@ -14,13 +14,12 @@
             type="String" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="##CCCCCC"
+    android:background="#CCCCCC"
     tools:context=".MainActivity">
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -172,17 +171,11 @@
         app:layout_constraintEnd_toEndOf="@id/poster"
         app:layout_constraintTop_toBottomOf="@id/poster" />
 
+
     <View
         android:layout_width="match_parent"
         android:background="#EAC306"
         android:layout_height="10dp"
-
-        app:layout_constraintEnd_toEndOf="parent" />
-    <View
-        android:layout_width="match_parent"
-        android:background="#A5A4A4"
-        android:layout_height="10dp"
-
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 
