@@ -18,16 +18,16 @@
             android:textColor="@color/black"
             android:layout_marginStart="145dp"
             android:textStyle="bold"
+            android:textSize="20sp"
             android:fontFamily="sans-serif"
             />
 
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/gener"
-            android:layout_marginStart="155dp"
+            android:layout_marginStart="145dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/movies_item_gener"
@@ -36,19 +36,17 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/descriptionId"
-            android:padding="10dp"
-
-            android:layout_marginStart="155dp"
+            android:paddingEnd="10dp"
+            android:layout_marginStart="145dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="60dp"
             android:layout_width="wrap_content"
             android:textColor="#2F3435"
             android:layout_height="wrap_content"
             android:text="@string/movies_item_description"
             android:textSize="12sp"
             android:textStyle="italic"
-            />
+            tools:ignore="RtlSymmetry" />
 
 
 
@@ -61,6 +59,7 @@
             android:layout_height="75dp"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/capa"
+
             />
 
         <androidx.appcompat.widget.AppCompatImageView
