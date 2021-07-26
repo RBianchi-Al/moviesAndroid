@@ -8,8 +8,6 @@
         android:layout_height="wrap_content"
         tools:context=".MoviesAdapter">
 
-
-
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/detailsId"
             android:layout_width="wrap_content"
@@ -18,37 +16,30 @@
             android:layout_marginTop="15dp"
             android:text="@string/movies_item_title"
             android:textColor="@color/black"
-            android:layout_marginLeft="145dp"
+            android:layout_marginStart="145dp"
             android:textStyle="bold"
             android:fontFamily="sans-serif"
-            android:layout_marginStart="@id/poster"
-            app:layout_constraintStart_toStartOf="@id/poster"
-            app:layout_constraintTop_toTopOf="@id/poster" />
+            />
 
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/genero"
-            android:gravity="left"
-            android:paddingRight="15dp"
-            android:layout_marginLeft="155dp"
-            android:layout_marginRight="30dp"
+            android:id="@+id/gener"
+            android:layout_marginStart="155dp"
+            android:layout_marginEnd="30dp"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/movies_item_genero"
+            android:text="@string/movies_item_gener"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@id/detailsId"
-            app:layout_constraintStart_toStartOf="@id/detailsId"
-            app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintTop_toBottomOf="@id/detailsId" />
+         />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/descriptionId"
             android:padding="10dp"
-            android:paddingRight="15dp"
-            android:layout_marginLeft="155dp"
-            android:layout_marginRight="30dp"
+
+            android:layout_marginStart="155dp"
+            android:layout_marginEnd="30dp"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="35dp"
             android:layout_width="wrap_content"
@@ -56,9 +47,6 @@
             android:layout_height="wrap_content"
             android:text="@string/movies_item_description"
             android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@id/poster"
-            app:layout_constraintTop_toTopOf="@id/poster"
-            app:layout_constraintBottom_toBottomOf="@id/poster"
             android:textStyle="italic"
             />
 
@@ -67,25 +55,23 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@id/poster"
             android:layout_marginBottom="15dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_width="120dp"
             android:layout_height="75dp"
             android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="@id/detailsId"
-            app:layout_constraintStart_toStartOf="@id/detailsId"
-            app:layout_constraintTop_toBottomOf="@id/detailsId"
-            app:srcCompat="@drawable/capa" />
+            app:srcCompat="@drawable/capa"
+            />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/button"
             android:layout_width="25dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="380dp"
+            android:layout_marginStart="380dp"
             android:layout_marginTop="40dp"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/setadois"
-/>
+        />
 
 
     </FrameLayout>

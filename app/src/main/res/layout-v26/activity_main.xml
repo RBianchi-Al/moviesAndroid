@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
             android:gravity="left"
-            android:text="@string/movies_item_genero"
+            android:text="@string/movies_item_gener"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@id/title"
             app:layout_constraintHorizontal_bias="0"

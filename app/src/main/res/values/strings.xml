@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Movies</string>
-    <string name="lista_de_filmes">Lista de filmes</string>
+    <string name="list_de_films">Lista de filmes</string>
     <string name="movies_item_description">Com altos e baixos, produção da Netflix em …</string>
     <string name="movies_item_title">O Gambito da Rainha</string>
-    <string name="movies_item_genero">Drama | 2020 | 2h40m | 18 anos</string>
+    <string name="movies_item_gener">Drama | 2020 | 2h40m | 18 anos</string>
     <string name="activity_movie_subtitle">Os filmes mais votados de 2020</string>
     <string name="activity_main_subtitletitle">Com altos e baixos, produção da Netflix em seu maior apelo na atuação e no magnetismo de Naya Taylor</string>
     <string name="activity_main_textdescription">Não basta querer revisitar outras décadas, é preciso saber encaixar as referências. \n E isso a figurinista de Berlim, Gabriele Binder, faz com maestria em O Gambito da Rainha.Com looks inspirados em alguns dos maiores ícones do mundo da moda, como Audrey Hepburn, Jackie Kennedy e Grace Kelly, ela criou um guarda-roupa para Beth Harmon, personagem da atriz revelação Anya Taylor-Joy, capaz de traduzir sentimentos em escalada social e emocional, que expressam exatamente cada momento…</string>

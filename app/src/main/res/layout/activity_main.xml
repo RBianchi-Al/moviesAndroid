@@ -59,8 +59,8 @@
             app:layout_constraintBottom_toBottomOf="@id/genero"
             app:layout_constraintStart_toEndOf="@id/genero"
             app:layout_constraintTop_toTopOf="@id/genero"
-
-            app:srcCompat="@drawable/estrela" />
+            app:srcCompat="@drawable/estrela"
+            />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/star2"
@@ -114,9 +114,7 @@
             android:id="@+id/genero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="0dp"
-            android:gravity="left"
-            android:text="@string/movies_item_genero"
+            android:text="@string/movies_item_gener"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@id/title"
             app:layout_constraintHorizontal_bias="0"

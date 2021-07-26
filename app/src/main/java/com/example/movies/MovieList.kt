@@ -15,7 +15,7 @@ class MovieList : AppCompatActivity() {
     }
 
     private fun initLayout(){
-        binding = ActivityMovieListBinding.inflate(layoutInflater)
+        this.binding = ActivityMovieListBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
     }
