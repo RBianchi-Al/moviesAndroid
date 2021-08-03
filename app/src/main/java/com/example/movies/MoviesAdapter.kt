@@ -3,29 +3,33 @@ package com.example.movies
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.movies.databinding.MoviesItemBinding
-import com.example.movies.MoviesViewHolder as MoviesViewHolder1
+import com.example.movies.model.MovieModel
+
 
 class MoviesViewHolder(val binding: MoviesItemBinding) : RecyclerView.ViewHolder(binding.root)
 
-class MoviesAdapter(val movieClickListener: () -> Unit) : RecyclerView.Adapter<MoviesViewHolder1>() {
+class MoviesAdapter(val movieClickListener: (Int) -> Unit) : RecyclerView.Adapter<MoviesViewHolder>() {
 
 
-    val listMovies: MutableList<String> = mutableListOf()
+    val listMovies: MutableList<MovieModel> = mutableListOf()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesViewHolder1 {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = MoviesItemBinding.inflate(inflater, parent, false)
-        return MoviesViewHolder1(binding)
+        return MoviesViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: MoviesViewHolder1, position: Int) {
+    override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
 
         val item = listMovies[position]
-       //val item = listMovies.get(position)
-        holder.binding.detailsId.text = item
-        holder.binding.button.setOnClickListener{
-            movieClickListener()
+       Glide.with(holder.binding.root)
+         .load("https://image.tmdb.org/t/p/w500${item.poster_path}")
+         .into(holder.binding.poster)
+        holder.binding.titleFilm.text = item.title
+        holder.binding.setaListFordescription.setOnClickListener{
+            movieClickListener(item.id)
         }
     }
 
@@ -33,7 +37,7 @@ class MoviesAdapter(val movieClickListener: () -> Unit) : RecyclerView.Adapter<M
         return listMovies.size
     }
 
-    fun addItemList(list: List<String>){
+    fun addItemList(list: List<MovieModel>){
         listMovies.addAll(list)
         notifyDataSetChanged()
     }

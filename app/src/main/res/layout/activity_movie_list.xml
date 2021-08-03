@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MovieList">
+        tools:context=".MovieListActivity">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@id/title"
@@ -16,12 +16,12 @@
             android:layout_marginTop="15dp"
             android:padding="5dp"
             android:text="@string/activity_movie_subtitle"
+            android:textStyle="bold"
             android:textColor="#2F3435"
-            android:textSize="18sp"
-            android:textStyle="italic"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"
 
-
-            android:layout_marginStart="20dp"/>
+            />
 
 
         <EditText
@@ -30,14 +30,13 @@
             android:layout_marginStart="15dp"
             android:layout_height="wrap_content"
             android:hint="@string/list_de_films"
-            android:textColor="#5e605f"
+            android:textColor="#EAEAEA"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="15dp"
             android:autofillHints="@string/app_name"
             android:inputType="text"
-            android:textStyle="italic"
             android:textSize="12sp"
-            android:background="@drawable/img"/>
+            android:background="@drawable/input"/>
 
 
 
@@ -45,7 +44,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="#EAC306" />
+            android:background="#EAEAEA" />
 
         <androidx.recyclerview.widget.RecyclerView
 

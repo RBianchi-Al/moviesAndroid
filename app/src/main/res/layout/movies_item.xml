@@ -8,62 +8,35 @@
         android:layout_height="wrap_content"
         tools:context=".MoviesAdapter">
 
+
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/detailsId"
+            android:id="@+id/titleFilm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/movies_item_title"
-            android:textColor="@color/black"
-            android:layout_marginStart="145dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:fontFamily="sans-serif"
-            />
-
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/gener"
-            android:layout_marginStart="145dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="120dp"
             android:layout_marginTop="40dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/movies_item_gener"
-            android:textSize="12sp"
-         />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/descriptionId"
-            android:paddingEnd="10dp"
-            android:layout_marginStart="145dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="60dp"
-            android:layout_width="wrap_content"
-            android:textColor="#2F3435"
-            android:layout_height="wrap_content"
-            android:text="@string/movies_item_description"
-            android:textSize="12sp"
-            android:textStyle="italic"
-            tools:ignore="RtlSymmetry" />
-
-
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/movies_item_title"
+            android:textColor="@color/titletext"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@id/poster"
-            android:layout_marginBottom="15dp"
-            android:layout_marginStart="15dp"
+            android:layout_width="87dp"
+            android:layout_height="121dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
-            android:layout_width="120dp"
-            android:layout_height="75dp"
+            android:layout_marginBottom="15dp"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/capa"
 
             />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/button"
+            android:id="@+id/seta_list_fordescription"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginStart="380dp"

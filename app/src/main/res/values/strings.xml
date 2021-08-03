@@ -6,8 +6,14 @@
     <string name="movies_item_gener">Drama | 2020 | 2h40m | 18 anos</string>
     <string name="activity_movie_subtitle"> 〽ovies </string>
     <string name="activity_main_subtitletitle">Com altos e baixos, produção da Netflix em seu maior apelo na atuação e no magnetismo de Naya Taylor</string>
-    <string name="activity_main_textdescription">Não basta querer revisitar outras décadas, é preciso saber encaixar as referências. \n E isso a figurinista de Berlim, Gabriele Binder, faz com maestria em O Gambito da Rainha.Com looks inspirados em alguns dos maiores ícones do mundo da moda, como Audrey Hepburn, Jackie Kennedy e Grace Kelly, ela criou um guarda-roupa para Beth Harmon, personagem da atriz revelação Anya Taylor-Joy, capaz de traduzir sentimentos em escalada social e emocional, que expressam exatamente cada momento…</string>
+    <string name="activity_main_textdescription">Não basta querer revisitar outras décadas, é preciso saber encaixar as referências.  E isso a figurinista de Berlim, Gabriele Binder, faz coos em escalada social e emocional, que expressam exatamente cada momento…</string>
     <string name="arquivo_netflix">arquivo@Netflix</string>
     <string name="button">Voltar</string>
+    <string name="ano">1h 40m ▫ 2021</string>
+    <string name="genermain">TERROR</string>
+    <string name="etariemain">16+</string>
+    <string name="populitymain">0.98</string>
+    <string name="string_etariemain">16+ </string>
+    <string name="string_titlemain">About the movie</string>
 
 </resources>
