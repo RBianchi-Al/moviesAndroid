@@ -26,7 +26,7 @@ class MoviesAdapter(val movieClickListener: (Int) -> Unit) : RecyclerView.Adapte
         val item = listMovies[position]
        Glide.with(holder.binding.root)
          .load("https://image.tmdb.org/t/p/w500${item.poster_path}")
-         .into(holder.binding.poster)
+         .into(holder.binding.capaMovie)
         holder.binding.titleFilm.text = item.title
         holder.binding.setaListFordescription.setOnClickListener{
             movieClickListener(item.id)

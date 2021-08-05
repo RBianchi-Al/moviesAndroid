@@ -1,9 +1,8 @@
 package com.example.movies.model
 
-data class ProductionMovies(val name: String, val logo_path: String, val origin_country: String){
+data class ProductionModel(val name: String){
     override fun toString(): String {
         return name
     }
-
 
 }
